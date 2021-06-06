@@ -43,7 +43,7 @@ const FILES_TO_CACHE = [
   
   // fetch
   self.addEventListener("fetch", function(event) {
-    if (event.request.url.includes("/api/transaction ")) {
+    if (event.request.url.includes("/api/transaction")) {
       event.respondWith(
         caches.open(DATA_CACHE_NAME).then(cache => {
           return fetch(event.request)
