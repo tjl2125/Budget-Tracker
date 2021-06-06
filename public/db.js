@@ -58,7 +58,7 @@ function checkDatabase() {
             transaction = db.transaction(['BudgetDB'], 'readwrite');
             const updatedStore = transaction.objectStore('BudgetDB');
             updatedStore.clear();
-            console.log('clearing the store...');
+            console.log('clearing store');
           }
         });
     }
